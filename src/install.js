@@ -373,8 +373,8 @@ function createGlobalModeratorsGroup(next) {
 			}
 			groups.create({
 				name: 'Global Moderators',
-				userTitle: 'Global Moderator',
-				description: 'Forum wide moderators',
+				userTitle: 'Global Maintainer',
+				description: 'TRT global Maintainer',
 				hidden: 0,
 				private: 1,
 				disableJoinRequests: 1,
@@ -469,8 +469,8 @@ function createWelcomePost(next) {
 			console.log('Creating welcome post!');
 			Topics.post({
 				uid: 1,
-				cid: 2,
-				title: 'Welcome to your NodeBB!',
+				cid: 1,
+				title: 'Welcome to your TRT!',
 				content: content,
 			}, next);
 		} else {

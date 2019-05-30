@@ -3,7 +3,7 @@
 	"page-views": "页面浏览量",
 	"unique-visitors": "单一访客",
 	"users": "用户",
-	"posts": "发帖",
+	"posts": "发布",
 	"topics": "主题",
 	"page-views-seven": "最近7天",
 	"page-views-thirty": "最近30天",
@@ -56,7 +56,7 @@
 	"registered": "已注册",
 
 	"user-presence": "用户光临",
-	"on-categories": "在版块列表",
+	"on-categories": "在页面列表",
 	"reading-posts": "读帖子",
 	"browsing-topics": "浏览话题",
 	"recent": "最近",

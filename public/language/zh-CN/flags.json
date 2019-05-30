@@ -22,9 +22,9 @@
 	"filter-type-user": "用户",
 	"filter-state": "状态",
 	"filter-assignee": "受委托人 UID",
-	"filter-cid": "版块",
+	"filter-cid": "页面",
 	"filter-quick-mine": "委托给我",
-	"filter-cid-all": "全部版块",
+	"filter-cid-all": "全部页面",
 	"apply-filters": "应用过滤器",
 
 	"quick-links": "快速链接",

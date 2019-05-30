@@ -1,38 +1,40 @@
 [
     {
-        "name": "Announcements",
-        "description": "Announcements regarding our community",
-        "descriptionParsed": "<p>Announcements regarding our community</p>\n",
-        "bgColor": "#fda34b",
+        "name": "announcement",
+        "description": "Recent important information!",
+        "descriptionParsed": "<p>recent important information!</p>\n",
+        "bgColor": "#e95c5a",
         "color": "#fff",
         "icon" : "fa-bullhorn",
         "order": 1
     },
+
     {
-        "name": "General Discussion",
-        "description": "A place to talk about whatever you want",
-        "descriptionParsed": "<p>A place to talk about whatever you want</p>\n",
-        "bgColor": "#59b3d0",
+        "name": "wiki",
+        "description": "Team Wiki",
+        "descriptionParsed": "<p>Team Wiki</p>\n",
+        "bgColor": "#fda34b",
         "color": "#fff",
-        "icon" : "fa-comments-o",
+        "icon" : "fa-file",
         "order": 2
     },
+
     {
-        "name": "Blogs",
-        "description": "Blog posts from individual members",
-        "descriptionParsed": "<p>Blog posts from individual members</p>\n",
+        "name": "projects",
+        "description": "Projects we are working on",
+        "descriptionParsed": "<p>Projects we are working on</p>\n",
         "bgColor": "#86ba4b",
         "color": "#fff",
-        "icon" : "fa-newspaper-o",
-        "order": 4
+        "icon" : "fa-plane",
+        "order": 3
     },
     {
-        "name": "Comments & Feedback",
-        "description": "Got a question? Ask away!",
-        "descriptionParsed": "<p>Got a question? Ask away!</p>\n",
-        "bgColor": "#e95c5a",
+        "name": "apparatus",
+        "description": "Our equipment",
+        "descriptionParsed": "<p>Our equipment</p>\n",
+        "bgColor": "#59b3d0",
         "color": "#fff",
-        "icon" : "fa-question",
-        "order": 3
+        "icon" : "fa-camera",
+        "order": 4
     }
 ]

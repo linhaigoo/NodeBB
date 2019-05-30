@@ -1,5 +1,5 @@
 {
-    "title": "NodeBB",
+    "title": "TRT",
     "showSiteTitle": 1,
     "defaultLang": "en-GB",
     "loginDays": 14,
@@ -26,7 +26,7 @@
     "minimumTagLength": 3,
     "maximumTagLength": 15,
     "allowTopicsThumbnail": 0,
-    "registrationType": "normal",
+    "registrationType": "invite-only",
     "allowAccountDelete": 1,
     "allowFileUploads": 0,
     "allowedFileExtensions": "png,jpg,bmp",

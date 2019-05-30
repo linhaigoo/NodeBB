@@ -8,7 +8,7 @@
 	"general/social": "社交",
 
 	"section-manage": "管理",
-	"manage/categories": "版块",
+	"manage/categories": "页面",
 	"manage/privileges": "权限",
 	"manage/tags": "话题",
 	"manage/users": "用户",
@@ -27,7 +27,7 @@
 	"settings/group": "群组",
 	"settings/guest": "游客",
 	"settings/uploads": "上传",
-	"settings/post": "发帖",
+	"settings/post": "发布",
 	"settings/chat": "聊天",
 	"settings/pagination": "分页",
 	"settings/tags": "话题",

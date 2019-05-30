@@ -1,10 +1,10 @@
 {
     "administrators": "Administrators",
-    "global-moderators": "Global Moderators",
-    "no-global-moderators": "No Global Moderators",
-    "moderators-of-category": "%1 Moderators",
-    "no-moderators": "No Moderators",
+    "global-moderators": "Global Maintainer",
+    "no-global-moderators": "No Global Maintainer",
+    "moderators-of-category": "%1 Maintainer",
+    "no-moderators": "No Maintainer",
     "add-administrator": "Add Administrator",
-    "add-global-moderator": "Add Global Moderator",
-    "add-moderator": "Add Moderator"
+    "add-global-moderator": "Add Global Maintainer",
+    "add-moderator": "Add Maintainer"
 }
