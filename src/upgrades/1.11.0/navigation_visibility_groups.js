@@ -19,7 +19,7 @@ module.exports = {
 						if (navItem.properties.adminOnly) {
 							navItem.groups.push('administrators');
 						} else if (navItem.properties.globalMod) {
-							navItem.groups.push('Global Moderators');
+							navItem.groups.push('Global Maintainer');
 						}
 
 						if (navItem.properties.loggedIn) {

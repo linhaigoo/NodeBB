@@ -364,15 +364,15 @@ function createGlobalModeratorsGroup(next) {
 	var groups = require('./groups');
 	async.waterfall([
 		function (next) {
-			groups.exists('Global Moderators', next);
+			groups.exists('Global Maintainer', next);
 		},
 		function (exists, next) {
 			if (exists) {
-				winston.info('Global Moderators group found, skipping creation!');
+				winston.info('Global Maintainer group found, skipping creation!');
 				return next(null, null);
 			}
 			groups.create({
-				name: 'Global Moderators',
+				name: 'Global Maintainer',
 				userTitle: 'Global Maintainer',
 				description: 'TRT global Maintainer',
 				hidden: 0,
@@ -381,7 +381,7 @@ function createGlobalModeratorsGroup(next) {
 			}, next);
 		},
 		function (groupData, next) {
-			groups.show('Global Moderators', next);
+			groups.show('Global Maintainer', next);
 		},
 	], next);
 }

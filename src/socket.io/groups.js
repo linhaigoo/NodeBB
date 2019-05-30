@@ -261,7 +261,7 @@ SocketGroups.delete = isOwner(function (socket, data, callback) {
 	if (data.groupName === 'administrators' ||
 		data.groupName === 'registered-users' ||
 		data.groupName === 'guests' ||
-		data.groupName === 'Global Moderators') {
+		data.groupName === 'Global Maintainer') {
 		return callback(new Error('[[error:not-allowed]]'));
 	}
 

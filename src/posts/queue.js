@@ -62,7 +62,7 @@ module.exports = function (Posts) {
 		async.waterfall([
 			function (next) {
 				async.parallel([
-					async.apply(groups.getMembersOfGroups, ['administrators', 'Global Moderators']),
+					async.apply(groups.getMembersOfGroups, ['administrators', 'Global Maintainer']),
 					async.apply(categories.getModeratorUids, [cid]),
 				], next);
 			},

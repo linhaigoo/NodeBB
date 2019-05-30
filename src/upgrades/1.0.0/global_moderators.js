@@ -9,14 +9,14 @@ module.exports = {
 		var groups = require('../../groups');
 		async.waterfall([
 			function (next) {
-				groups.exists('Global Moderators', next);
+				groups.exists('Global Maintainer', next);
 			},
 			function (exists, next) {
 				if (exists) {
 					return next(null, null);
 				}
 				groups.create({
-					name: 'Global Moderators',
+					name: 'Global Maintainer',
 					userTitle: 'Global Moderator',
 					description: 'Forum wide moderators',
 					hidden: 0,
@@ -25,7 +25,7 @@ module.exports = {
 				}, next);
 			},
 			function (groupData, next) {
-				groups.show('Global Moderators', next);
+				groups.show('Global Maintainer', next);
 			},
 		], callback);
 	},

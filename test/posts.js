@@ -68,7 +68,7 @@ describe('Post\'s', function () {
 				postData = data.postData;
 				topicData = data.topicData;
 
-				groups.join('Global Moderators', globalModUid, done);
+				groups.join('Global Maintainer', globalModUid, done);
 			});
 		});
 	});

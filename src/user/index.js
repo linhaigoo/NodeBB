@@ -263,7 +263,7 @@ User.getAdminsandGlobalMods = function (callback) {
 		function (next) {
 			async.parallel([
 				async.apply(groups.getMembers, 'administrators', 0, -1),
-				async.apply(groups.getMembers, 'Global Moderators', 0, -1),
+				async.apply(groups.getMembers, 'Global Maintainer', 0, -1),
 			], next);
 		},
 		function (results, next) {
@@ -277,7 +277,7 @@ User.getAdminsandGlobalModsandModerators = function (callback) {
 		function (next) {
 			async.parallel([
 				async.apply(groups.getMembers, 'administrators', 0, -1),
-				async.apply(groups.getMembers, 'Global Moderators', 0, -1),
+				async.apply(groups.getMembers, 'Global Maintainer', 0, -1),
 				async.apply(User.getModeratorUids),
 			], next);
 		},

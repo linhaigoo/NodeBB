@@ -1,7 +1,7 @@
 {
     "administrators": "Administrators",
-    "global-moderators": "Global Moderators",
-    "no-global-moderators": "No Global Moderators",
+    "global-moderators": "Global Maintainer",
+    "no-global-moderators": "No Global Maintainer",
     "moderators-of-category": "%1 Moderators",
     "no-moderators": "No Moderators",
     "add-administrator": "Add Administrator",

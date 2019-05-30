@@ -21,9 +21,9 @@ module.exports = function (privileges) {
 
 	privileges.users.isGlobalModerator = function (uid, callback) {
 		if (Array.isArray(uid)) {
-			groups.isMembers(uid, 'Global Moderators', callback);
+			groups.isMembers(uid, 'Global Maintainer', callback);
 		} else {
-			groups.isMember(uid, 'Global Moderators', callback);
+			groups.isMember(uid, 'Global Maintainer', callback);
 		}
 	};
 

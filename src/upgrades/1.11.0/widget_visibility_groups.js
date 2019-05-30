@@ -19,7 +19,7 @@ module.exports = {
 						area.widgets = area.data;
 						area.widgets.forEach(function (widget) {
 							if (widget && widget.data) {
-								const groupsToShow = ['administrators', 'Global Moderators'];
+								const groupsToShow = ['administrators', 'Global Maintainer'];
 								if (widget.data['hide-guests'] !== 'on') {
 									groupsToShow.push('guests');
 								}

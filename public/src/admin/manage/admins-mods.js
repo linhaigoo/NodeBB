@@ -43,7 +43,7 @@ define('admin/manage/admins-mods', ['translator', 'benchpress', 'autocomplete'],
 
 		autocomplete.user($('#global-mod-search'), function (ev, ui) {
 			socket.emit('admin.groups.join', {
-				groupName: 'Global Moderators',
+				groupName: 'Global Maintainer',
 				uid: ui.item.user.uid,
 			}, function (err) {
 				if (err) {
@@ -69,7 +69,7 @@ define('admin/manage/admins-mods', ['translator', 'benchpress', 'autocomplete'],
 
 			bootbox.confirm('[[admin/manage/users:alerts.confirm-remove-global-mod]]', function (confirm) {
 				if (confirm) {
-					socket.emit('admin.groups.leave', { uid: uid, groupName: 'Global Moderators' }, function (err) {
+					socket.emit('admin.groups.leave', { uid: uid, groupName: 'Global Maintainer' }, function (err) {
 						if (err) {
 							return app.alertError(err.message);
 						}

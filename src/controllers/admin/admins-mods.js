@@ -15,7 +15,7 @@ AdminsMods.get = function (req, res, next) {
 					groups.get('administrators', { uid: req.uid }, next);
 				},
 				globalMods: function (next) {
-					groups.get('Global Moderators', { uid: req.uid }, next);
+					groups.get('Global Maintainer', { uid: req.uid }, next);
 				},
 				categories: function (next) {
 					getModeratorsOfCategories(req.uid, next);

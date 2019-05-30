@@ -669,7 +669,7 @@ Flags.notify = function (flagObj, uid, callback) {
 			},
 			title: async.apply(topics.getTitleByPid, flagObj.targetId),
 			admins: async.apply(groups.getMembers, 'administrators', 0, -1),
-			globalMods: async.apply(groups.getMembers, 'Global Moderators', 0, -1),
+			globalMods: async.apply(groups.getMembers, 'Global Maintainer', 0, -1),
 			moderators: function (next) {
 				var cid;
 				async.waterfall([
@@ -726,7 +726,7 @@ Flags.notify = function (flagObj, uid, callback) {
 	case 'user':
 		async.parallel({
 			admins: async.apply(groups.getMembers, 'administrators', 0, -1),
-			globalMods: async.apply(groups.getMembers, 'Global Moderators', 0, -1),
+			globalMods: async.apply(groups.getMembers, 'Global Maintainer', 0, -1),
 		}, function (err, results) {
 			if (err) {
 				return callback(err);
