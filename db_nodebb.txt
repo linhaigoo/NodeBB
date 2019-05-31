@@ -1,2 +1,6 @@
 db.createUser( { user: "nodebb", pwd: "qwertyui", roles: [ { role: "readWrite", db: "nodebb" }, { role: "clusterMonitor", db: "admin" } ] } )
 mongodb://nodebb:qwertyui@localhost:4567
+
+start nginx
+nginx -s stop
+nginx -s reload

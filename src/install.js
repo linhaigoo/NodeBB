@@ -493,9 +493,9 @@ function enableDefaultPlugins(next) {
 		'nodebb-plugin-emoji-android',
 		"nodebb-plugin-dbsearch",
 
+		"nodebb-plugin-emailer-smtp",
 		"nodebb-plugin-calendar",
 		"nodebb-plugin-mermaid",
-        "nodebb-plugin-wiki",
 	];
 	var customDefaults = nconf.get('defaultplugins') || nconf.get('defaultPlugins');
 
