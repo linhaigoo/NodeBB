@@ -3,7 +3,7 @@
 var async = require('async');
 
 module.exports = {
-	name: 'Creating Global moderators group',
+	name: 'Creating Global Maintainer group',
 	timestamp: Date.UTC(2016, 0, 23),
 	method: function (callback) {
 		var groups = require('../../groups');
@@ -17,8 +17,8 @@ module.exports = {
 				}
 				groups.create({
 					name: 'Global Maintainer',
-					userTitle: 'Global Moderator',
-					description: 'Forum wide moderators',
+					userTitle: 'Global Maintainer',
+					description: 'Global Maintainer',
 					hidden: 0,
 					private: 1,
 					disableJoinRequests: 1,

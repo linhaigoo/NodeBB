@@ -491,6 +491,11 @@ function enableDefaultPlugins(next) {
 		'nodebb-plugin-soundpack-default',
 		'nodebb-plugin-emoji',
 		'nodebb-plugin-emoji-android',
+		"nodebb-plugin-dbsearch",
+
+		"nodebb-plugin-calendar",
+		"nodebb-plugin-mermaid",
+        "nodebb-plugin-wiki",
 	];
 	var customDefaults = nconf.get('defaultplugins') || nconf.get('defaultPlugins');
 
