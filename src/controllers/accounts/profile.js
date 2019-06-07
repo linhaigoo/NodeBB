@@ -73,15 +73,22 @@ profileController.get = function (req, res, callback) {
 			if (meta.config['reputation:disabled']) {
 				delete userData.reputation;
 			}
+			var pageCount = Math.ceil(userData.postcount / itemsPerPage);
 
-			userData.posts = results.posts.posts.filter(p => p && !p.deleted);
+			if(req.uid > 0)
+			{
+				userData.posts = results.posts.posts.filter(p => p && !p.deleted);
+				pageCount = 0;
+				
+			}
+			userData.accessId = req.uid;
 			userData.hasPrivateChat = results.hasPrivateChat;
 			userData.aboutme = translator.escape(results.aboutme);
 			userData.nextStart = results.posts.nextStart;
 			userData.breadcrumbs = helpers.buildBreadcrumbs([{ text: userData.username }]);
 			userData.title = userData.username;
 			userData.allowCoverPicture = !userData.isSelf || userData.reputation >= (meta.config['min:rep:cover-picture'] || 0);
-			var pageCount = Math.ceil(userData.postcount / itemsPerPage);
+			
 			userData.pagination = pagination.create(page, pageCount, req.query);
 
 			if (!userData.profileviews) {

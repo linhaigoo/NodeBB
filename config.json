@@ -10,8 +10,5 @@
         "password": "qwertyui",
         "database": "nodebb",
         "uri": ""
-    },
-    "socket.io":{
-        "origins":"*:*"
     }
 }

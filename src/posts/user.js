@@ -117,10 +117,10 @@ module.exports = function (Posts) {
 
 	function getUserData(uids, uid, callback) {
 		const fields = [
-			'uid', 'username', 'fullname', 'userslug',
-			'reputation', 'postcount', 'topiccount', 'picture',
+			'uid', 'username', 'fullname', 'userslug','picture',
+			/**'reputation', 'postcount', 'topiccount', 
 			'signature', 'banned', 'banned:expire', 'status',
-			'lastonline', 'groupTitle',
+			'lastonline', **/ 'groupTitle',
 		];
 		async.waterfall([
 			function (next) {
