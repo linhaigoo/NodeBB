@@ -2,6 +2,9 @@
     "url": "http://localhost:4567",
     "secret": "5c350fab-6ed4-4ae8-905b-9222a9189019",
     "database": "mongo",
+    "socket.io": {
+        "origins": "*:*"
+    },
     "port": "4567",
     "mongo": {
         "host": "127.0.0.1",

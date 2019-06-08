@@ -33,6 +33,11 @@ questions.main = [
 		description: 'Which database to use',
 		default: nconf.get('database') || 'mongo',
 	},
+	{
+		name: 'socket.io',
+		description: 'socket port',
+		default: nconf.get('socket.io') || {origins:'*:*'},
+	},
 ];
 
 questions.optional = [
