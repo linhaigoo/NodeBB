@@ -1,0 +1,8 @@
+net stop mongoDB
+sc delete MongoDB
+sc create MongoDB binpath= "G:\mongoDB\bin\mongod.exe --config G:\mongoDB\bin\mongod.cfg --auth --service"
+net start mongoDB
+
+db.createUser({user: 'admin', pwd: 'adminadmin', roles: [{role: 'userAdminAnyDatabase', db: 'admin'}]})
+
+db.createUser({user:"admin",customData:{description:"superuser"},pwd:"admin1234",roles:[{role:"userAdmin",db:"TRT"}]})
